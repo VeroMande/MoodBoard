@@ -1,0 +1,214 @@
+/*top, left, bottom o right*/
+
+/*
+z-index
+Il funzionamento di z-index è molto semplice: l'elemento col valore numerico maggiore si 
+sovrappone a quelli con valori minori.
+*/
+
+/*
+#container {
+	border:solid 6px red;
+	height:600;
+	width: 900;
+}
+*/
+
+/*position: absolute --> rende gli elementi fissi nella pagina*/
+
+h1 {
+	position:absolute;
+	height: 600;
+	width: 600;
+
+
+	left:590px;
+	bottom:30px;
+}
+
+h2 {
+	position:absolute;
+	height: 600;
+	width: 600;
+	z-index: 3;
+
+	left:385px;
+	bottom:30px;
+}
+
+
+audio{
+	position:absolute;
+	height: 600;
+	width: 600;
+	z-index: 4;
+	left:385px;
+	bottom:30px;
+}
+
+.sfondo {
+	position:absolute;
+  	left: 200px;
+  	bottom: 100px;
+	z-index: -1;
+	opacity: 0.9;
+}
+
+.futuro {
+	position:absolute;
+  	left: 200px;
+  	bottom: 100px;
+	z-index: -1;
+	/*opacity: 0.5;*/
+	height: 509px;
+	width: 990px;
+}
+
+.uomo {
+	position:absolute;
+	height: 500;
+	width: 500;
+	z-index: 3;
+
+	left:435px;
+	bottom:40px;
+}
+
+
+
+.cartello {
+	position: absolute;
+	height: 400px;
+	width: 300px;
+	z-index: 4;
+	bottom:100px;
+	left:205px;
+}
+
+.cartello:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+
+
+/* OROLOGIO CHE PULSA PULSE */
+.orologio {
+	position: absolute;
+	height: 450px;
+	width: 450px;
+	z-index: 5;
+	bottom:130px;
+	left:450px;
+
+	
+	border-radius: 50%;
+	margin: 10px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+ 
+/*  SHAKE CLESSIDRA  */
+.clessidra {
+	position: absolute;
+	height: 400px;
+	width: 350px;
+	z-index: 2;
+	bottom:70px;
+	left:780px;
+
+	transform:rotate(10deg);
+	-ms-transform: rotate(10deg); 
+	-webkit-transform: rotate(10deg); 
+
+}
+.clessidra:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+.bambino {
+	position:absolute;
+	height: 500;
+	width: 200;
+	left:980px;
+	z-index: 0;
+	bottom:100px;
+	/*opacity: 0.3;*/
+}
+
+.palette{
+	position:absolute;
+	z-index: 1;
+	bottom:260px;
+	left:120px;
+	
+}
+
+
+
+
+
+
+
+
